@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - ProMáquinas</title>
+    <meta name="description" content="Entre em contato com a ProMáquinas. Estamos prontos para ajudar você e sua empresa!">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+            color: #fff;
+            padding-top: 70px;
+        }
+        
+        h1,
+        h2 {
+            font-weight: 800;
+            color: #ff0033;
+        }
+        
+        .highlight {
+            color: #d8d7d3;
+        }
+        
+        .card-contact {
+            background-color: #1f1f1f;
+            border: 1px solid #ff4d4d;
+            box-shadow: 0 0 20px rgba(255, 0, 51, 0.2);
+            border-radius: 15px;
+        }
+        
+        .form-control {
+            background-color: #111;
+            color: #fff;
+            border: 1px solid #ff0033;
+        }
+        
+        .form-control::placeholder {
+            color: #999;
+        }
+        
+        .btn-custom {
+            background: linear-gradient(135deg, #ff0033, #ff6a00);
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+        
+        .btn-custom:hover {
+            background: linear-gradient(135deg, #ff6a00, #ff0033);
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.4rem;
+            margin-right: 15px;
+            transition: 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: #ade007;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #111;
+            color: #aaa;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1>Fale com a <span class="highlight">ProMáquinas</span></h1>
+            <p class="lead">Envie sua mensagem ou cadastre sua empresa. Teremos prazer em atender você!</p>
+        </div>
+
+        <div class="row g-5">
+            <!-- Informações de Contato -->
+            <div class="col-md-5">
+                <div class="p-4 card-contact">
+                    <h4 class="mb-3"><i class="bi bi-geo-alt-fill text-danger"></i> Endereço</h4>
+                    <p>Av. Dep. Esteves Rodrigues, 322 – Centro, Montes Claros - MG</p>
+
+                    <h4 class="mt-4 mb-3"><i class="bi bi-telephone-fill text-danger"></i> Telefone</h4>
+                    <p><a href="tel:+5538999999999" class="text-white text-decoration-none">(38) 99999-9999</a></p>
+
+                    <h4 class="mt-4 mb-3"><i class="bi bi-envelope-fill text-danger"></i> E-mail</h4>
+                    <p><a href="mailto:contato@promaquinas.com" class="text-white text-decoration-none">contato@promaquinas.com</a></p>
+
+                    <h4 class="mt-4 mb-3"><i class="bi bi-share-fill text-danger"></i> Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulário -->
+            <div class="col-md-7">
+                <div class="p-4 card-contact">
+                    <h4 class="mb-4 text-center"><i class="bi bi-person-lines-fill text-warning"></i> Cadastro da Sua Empresa</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="empresa" class="form-label">Nome da Empresa</label>
+                            <input type="text" class="form-control" id="empresa" placeholder="Ex: ProMáquinas Ltda.">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cnpj" class="form-label">CNPJ</label>
+                            <input type="text" class="form-control" id="cnpj" placeholder="00.000.000/0000-00">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="email@empresa.com.br">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom w-100"><i class="bi bi-send-fill me-2"></i>Enviar Cadastro</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <p>&copy; 2025 <span class="highlight">ProMáquinas</span>. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
